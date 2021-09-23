@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
+import Settings from "./screens";
 
 function App() {
-  return (
-    <div className="App">
-      <text>Hello wallet</text>
-    </div>
-  );
+    return (
+        <Settings/>
+    );
 }
+
 
 export default App;
