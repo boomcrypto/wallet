@@ -1,4 +1,4 @@
-import {createTheme} from "@mui/material";
+import {createTheme} from '@mui/material';
 
 /*
     --q-color-primary: #f4e8f9;
@@ -12,17 +12,16 @@ import {createTheme} from "@mui/material";
  */
 
 const boomTheme = createTheme({
-    palette: {
-        primary: {
-            main: '#f4e8f9',
-        },
-        secondary: {
-            main: '#e9d1f2',
-        },
-        contrastThreshold: 3,
-        tonalOffset: 0.2,
-
-    }
-})
+  palette: {
+    primary: {
+      main: '#f4e8f9',
+    },
+    secondary: {
+      main: '#e9d1f2',
+    },
+    contrastThreshold: 3,
+    tonalOffset: 0.2,
+  },
+});
 
 export default boomTheme;
