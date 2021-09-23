@@ -1,7 +1,7 @@
 import React from 'react';
 import {Box} from '@mui/material';
-import AccountSettingsCard from '../components/AccountCardSettings';
-import MoreSettingsCard from '../components/MoreSettingsCard';
+import AccountSettingsCard from './components/AccountCardSettings';
+import MoreSettingsCard from './components/MoreSettingsCard';
 
 const Settings: React.FC = () => {
   return (
