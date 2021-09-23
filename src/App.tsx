@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Settings from './screens';
+import Settings from './pages';
 import {ThemeProvider} from '@mui/material';
 import boomTheme from './theme';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
