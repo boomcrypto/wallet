@@ -1,7 +1,7 @@
 import React from 'react';
 import {Box, Card, CardContent} from '@mui/material';
 import ListRow from '../../../components/ListItem';
-import Title from '../../../common/Title';
+import {Title} from '../../../components/typography';
 
 const MoreSettingsCard: React.FC = () => {
   return (

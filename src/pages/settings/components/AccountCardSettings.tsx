@@ -1,8 +1,8 @@
 import React from 'react';
 import {Avatar, Box, Card, CardContent} from '@mui/material';
 import ListRow from '../../../components/ListItem';
-import Title from '../../../common/Title';
 import {deepPurple} from '@mui/material/colors';
+import {Title} from '../../../components/typography';
 
 const AccountSettingsCard: React.FC<{}> = () => {
   return (
