@@ -10,7 +10,7 @@ const ListRow: React.FC<{
   onClick: () => void;
 }> = ({text, onClick}) => {
   return (
-    <ListItem disablePadding onClick={onClick}>
+    <ListItem disablePadding onClick={onClick} sx={{width: '100%', minWidth: '300px'}}>
       <ListItemButton>
         <ListItemText primary={text} />
         <ListItemIcon>

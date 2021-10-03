@@ -1,20 +1,18 @@
 import React from 'react';
-import {Avatar, Box, Card, CardContent} from '@mui/material';
+import {Avatar, Box} from '@mui/material';
 import ListRow from '../../../components/ListItem';
 import {deepPurple} from '@mui/material/colors';
 import {Title} from '../../../components/typography';
+import BoomCard from '../../../components/BoomCard';
 
 const AccountSettingsCard: React.FC<{}> = () => {
   return (
-    <Card sx={{width: 500, borderRadius: 2, margin: 2}} variant="outlined">
-      <>
-        <CardContent>
-          <SettingsCardHeader text={'Settings'} />
-          <ListRow text={'Profile'} onClick={() => alert('hello me.')} />
-          <ListRow text={'Sign Out'} onClick={() => alert('hello me.')} />
-        </CardContent>
-      </>
-    </Card>
+    <BoomCard>
+      <SettingsCardHeader text={'Settings'} />
+
+      <ListRow text={'Profile'} onClick={() => alert('hello me.')} />
+      <ListRow text={'Sign Out'} onClick={() => alert('hello me.')} />
+    </BoomCard>
   );
 };
 

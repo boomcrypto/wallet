@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, Typography} from '@mui/material';
+import {Container} from '@mui/material';
+import {Text} from '../../../components/typography';
 
 const InfoItemRow: React.FC<{
   label: string;
@@ -14,12 +15,8 @@ const InfoItemRow: React.FC<{
         alignItems: 'center',
       }}
     >
-      <Typography variant="body1" sx={{padding: 1, fontWeight: 'bold'}}>
-        {`${label}: `}
-      </Typography>
-      <Typography variant="body1" sx={{padding: 1}}>
-        {text}
-      </Typography>
+      <Text value={label} />
+      <Text value={text} />
     </Container>
   );
 };

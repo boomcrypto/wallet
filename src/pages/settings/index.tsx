@@ -1,7 +1,6 @@
 import React from 'react';
 import {Box} from '@mui/material';
 import AccountSettingsCard from './components/AccountCardSettings';
-import MoreSettingsCard from './components/MoreSettingsCard';
 
 const Settings: React.FC = () => {
   return (
@@ -14,12 +13,11 @@ const Settings: React.FC = () => {
           display: 'flex',
           bgcolor: 'primary.main',
           flexDirection: 'column',
-          flexGrow: 1,
           alignItems: 'center',
         }}
       >
         <AccountSettingsCard />
-        <MoreSettingsCard />
+        {/*<MoreSettingsCard />*/}
       </Box>
     </div>
   );

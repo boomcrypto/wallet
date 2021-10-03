@@ -1,13 +1,6 @@
 import React from 'react';
-import {
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableRow,
-  Typography,
-} from '@mui/material';
+import {Paper, Table, TableBody, TableCell, TableContainer, TableRow} from '@mui/material';
+import {Text} from '../../../components/typography';
 
 export interface InfoItem {
   label: string;
@@ -26,7 +19,7 @@ const ProfileCard: React.FC = () => {
               component="th"
               scope="row"
             >
-              <Typography sx={{fontWeight: 'bold'}}> name</Typography>
+              <Text value="name" weight="bold" />
             </TableCell>
             <TableCell sx={{borderBottom: 'none'}} align="left">
               amrro
@@ -40,7 +33,7 @@ const ProfileCard: React.FC = () => {
               component="th"
               scope="row"
             >
-              <Typography sx={{fontWeight: 'bold'}}> name</Typography>
+              <Text value="name" weight="bold" />
             </TableCell>
             <TableCell sx={{borderBottom: 'none'}} align="left">
               amrro
@@ -54,7 +47,7 @@ const ProfileCard: React.FC = () => {
               component="th"
               scope="row"
             >
-              <Typography sx={{fontWeight: 'bold'}}> name</Typography>
+              <Text value="name" weight="bold" />
             </TableCell>
             <TableCell sx={{borderBottom: 'none'}} align="left">
               amrro

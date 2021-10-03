@@ -4,7 +4,7 @@ import {Typography} from '@mui/material';
 
 export type Weight = 'bold' | 'normal';
 
-export const Text: React.FC<{value: string; weight: Weight}> = ({value, weight}) => {
+export const Text: React.FC<{value: string; weight?: Weight}> = ({value, weight = 'normal'}) => {
   return (
     <Typography variant="body1" sx={{padding: 1, fontWeight: {weight}}}>
       {value}
