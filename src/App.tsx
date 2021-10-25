@@ -1,11 +1,23 @@
 import React from 'react';
-import './App.css';
+import Settings from './pages/settings';
+import {ThemeProvider} from '@mui/material';
+import boomTheme from './theme';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import BoomToolbar from './components/BoomToolbar';
 
 function App() {
   return (
-    <div className="App">
-      <text>Hello wallet</text>
-    </div>
+    <ThemeProvider theme={boomTheme}>
+      <BoomToolbar title={'Boom Settings'} />
+
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Settings />
+          </Route>
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 
